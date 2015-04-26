@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+require 'whitenoise'
+require 'whitenoise/IP_Generator'
+
+chatter = Whitenoise::IP_Generator.new
+
+
+for i in (1..100)
+chatter.generate_ip
+end
+
